@@ -14,7 +14,8 @@ WEBHOOK_URL="https://hooks.slack.com/services/ZQXXXXXXX/YYXXXFFFEEE/skskdjIdjr8d
 
 ### Usage
 
-```Usage: ./slack-message.sh [options] <MESSAGE>
+```
+Usage: ./slack-message.sh [options] <MESSAGE>
 
  Available options:
     --channel=
