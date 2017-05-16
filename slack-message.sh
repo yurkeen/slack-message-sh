@@ -5,7 +5,7 @@
 #
 # Read the $WEBHOOK_URL from the .env file otherwise from the environment var
 #
-source .env
+source "$( dirname $0 )/.env"
 
 WEBHOOK_URL=${WEBHOOK_URL}
 
