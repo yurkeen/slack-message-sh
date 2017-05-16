@@ -5,7 +5,8 @@
 #
 # Read the $WEBHOOK_URL from the .env file otherwise from the environment var
 #
-source "$( dirname $0 )/.env"
+ENVFILE="$( dirname $0 )/.env"
+[ -f $ENVFILE ] && source $ENVFILE
 
 WEBHOOK_URL=${WEBHOOK_URL}
 
@@ -64,6 +65,5 @@ PAYLOAD="{\"channel\": \"${SLACK_CHANNEL}\",
 	  \"text\": \"${SLACK_MESSAGE}\",
 	  \"icon_emoji\": \"${SLACK_ICON}\"}"
 
-echo $PAYLOAD 
 curl --silent -X POST --data-urlencode "payload=$PAYLOAD" ${WEBHOOK_URL} > /dev/null
 
