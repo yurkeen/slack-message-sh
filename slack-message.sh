@@ -64,6 +64,5 @@ PAYLOAD="{\"channel\": \"${SLACK_CHANNEL}\",
 	  \"text\": \"${SLACK_MESSAGE}\",
 	  \"icon_emoji\": \"${SLACK_ICON}\"}"
 
-echo $PAYLOAD 
 curl --silent -X POST --data-urlencode "payload=$PAYLOAD" ${WEBHOOK_URL} > /dev/null
 
