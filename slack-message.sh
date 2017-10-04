@@ -1,7 +1,8 @@
 #!/bin/sh
 #
-
-
+# # # # #
+# Origin: https://github.com/yurkeen/slack-message-sh
+# # # # #
 #
 # Read the $WEBHOOK_URL from the .env file otherwise from the environment var
 #
