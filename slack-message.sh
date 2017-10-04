@@ -12,7 +12,7 @@ ENVFILE="$( dirname $0 )/.env"
 
 WEBHOOK_URL=${WEBHOOK_URL}
 
-function show_help(){
+show_help(){
 cat << EOF
 
 Usage: $0 [options] <MESSAGE>
@@ -26,7 +26,7 @@ EOF
 }
 
 
-function check_args(){
+check_args(){
 # Check arguments
 if [ $# -eq 0 ]; then
   printf "\nError: Mo arguments specified.\n"
@@ -36,7 +36,7 @@ fi
 }
 
 
-function read_args(){
+read_args(){
 # Read arguments
 while [ $# -gt 0 ]; do
   case "$1" in
